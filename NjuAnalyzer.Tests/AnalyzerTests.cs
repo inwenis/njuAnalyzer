@@ -30,7 +30,7 @@ class AnalyzerTests
     }
 
     [Test]
-    public static void GetCurrentCost_TwoCallAdded_ReturnsCallsCost()
+    public static void GetCurrentCost_TwoCallsAdded_ReturnsCallsCost()
     {
         var sut = new Analyzer();
 
