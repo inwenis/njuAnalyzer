@@ -13,7 +13,7 @@ namespace njuAnalyzer
 
         public void Add(Expense expense)
         {
-            _sum = expense.Charge;
+            _sum += expense.Charge;
         }
 
         public class Expense

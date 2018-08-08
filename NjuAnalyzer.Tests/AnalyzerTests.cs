@@ -28,4 +28,21 @@ class AnalyzerTests
 
         Assert.AreEqual(10.00m, currentCost);
     }
+
+    [Test]
+    public static void GetCurrentCost_TwoCallAdded_ReturnsCallsCost()
+    {
+        var sut = new Analyzer();
+
+        var expense = new Analyzer.Expense() 
+        {
+            Charge = 10.00m
+        };
+        sut.Add(expense);
+        sut.Add(expense);
+        var currentCost = sut.GetCurrentCost();
+
+        Assert.AreEqual(20.00m, currentCost);
+    }
+
 }
