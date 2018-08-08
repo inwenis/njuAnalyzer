@@ -4,9 +4,21 @@ namespace njuAnalyzer
 {
     public class Analyzer
     {
-        public Decimal GetCurrentCost()
+        private decimal _sum;
+
+        public decimal GetCurrentCost()
         {
-            return 0;
+            return _sum;
+        }
+
+        public void Add(Expense expense)
+        {
+            _sum = expense.Charge;
+        }
+
+        public class Expense
+        {
+            public decimal Charge;
         }
     }
 }
