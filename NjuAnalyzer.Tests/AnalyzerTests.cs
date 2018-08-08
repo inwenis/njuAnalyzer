@@ -64,5 +64,6 @@ class AnalyzerTests
         Assert.AreEqual(29.00m, currentCost);
     }
 
+    //next test: adding landline calls
 
 }
