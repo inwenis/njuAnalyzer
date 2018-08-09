@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace njuAnalyzer
+﻿namespace njuAnalyzer
 {
     public class Analyzer
     {
