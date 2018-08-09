@@ -8,6 +8,7 @@ namespace njuAnalyzer
         private decimal _cellPhoneCallsCostThreshold;
         private decimal _landlineCallsCostThreshold;
         private decimal _landlineCallTotalCost;
+        private decimal _otherExpensesTotalCost;
 
         public Analyzer(decimal cellPhoneCallsCostThreshold, decimal landlineCallsCostThreshold)
         {
@@ -30,7 +31,7 @@ namespace njuAnalyzer
                     _cellPhoneCallsTotalCost += expense.Charge;
                 }
             }
-            else
+            else if(expense.ExpenseType == ExpenseTypes.LandlineCall)
             {
                 if (IsLandLineCallsCostthresholdReached(expense))
                 {
@@ -40,6 +41,10 @@ namespace njuAnalyzer
                 {
                     _landlineCallTotalCost += expense.Charge;
                 }
+            }
+            else
+            {
+                _otherExpensesTotalCost += expense.Charge;
             }
         }
 
@@ -55,7 +60,7 @@ namespace njuAnalyzer
 
         public decimal GetCurrentCost()
         {
-            return _cellPhoneCallsTotalCost + _landlineCallTotalCost;
+            return _cellPhoneCallsTotalCost + _landlineCallTotalCost + _otherExpensesTotalCost;
         }
 
 
@@ -86,7 +91,8 @@ namespace njuAnalyzer
             LandlineCall,
             CellPhoneCall,
             SMS,
-            MobileData
+            MobileData,
+            InternationlSms
         }
 
     }
