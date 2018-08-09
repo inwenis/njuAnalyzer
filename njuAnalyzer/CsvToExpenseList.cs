@@ -44,6 +44,10 @@ namespace njuAnalyzer
                 {
                     expenseType = njuAnalyzer.ExpenseType.InfolineCall;
                 }
+                else if (@operator == "Dania kom")
+                {
+                    expenseType = njuAnalyzer.ExpenseType.InternationalCall;
+                }
                 else
                 {
                     expenseType = njuAnalyzer.ExpenseType.CellPhoneCall;
