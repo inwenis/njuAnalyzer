@@ -13,10 +13,14 @@ namespace njuAnalyzer
             }
             else
             {
-                return new List<Analyzer.Expense>
+                var enumerable = lines.Skip(1).Select(x =>
                 {
-                    new Analyzer.Expense(0m, Analyzer.ExpenseTypes.MobileData)
-                };
+                    var split = x.Split(';');
+                    var cost = split[5].Replace(" zł", "").Replace('.', ',');
+                    var parsedCost = decimal.Parse(cost);
+                    return new Analyzer.Expense(parsedCost, Analyzer.ExpenseTypes.MobileData);
+                });
+                return enumerable;
             }
         }
     }
