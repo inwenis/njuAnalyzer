@@ -4,30 +4,39 @@ namespace njuAnalyzer
 {
     public class Analyzer
     {
-        private decimal _sum;
-        private decimal _threshold;
+        private decimal _cellPhoneCallsSum;
+        private decimal _cellPhoneCallsThreshold;
+        private decimal _landlineCallsSum;
 
-        public Analyzer(decimal threshold)
+        public Analyzer(decimal cellPhoneCallsThreshold)
         {
-            _threshold = threshold;
-        }
-
-        public decimal GetCurrentCost()
-        {
-            return _sum;
+            _cellPhoneCallsThreshold = cellPhoneCallsThreshold;
         }
 
         public void Add(Expense expense)
         {
-            if (_sum + expense.Charge < _threshold)
+            if (expense.ExpenseType == ExpenseTypes.CellPhoneCall)
             {
-                _sum += expense.Charge;
+                if (_cellPhoneCallsSum + expense.Charge < _cellPhoneCallsThreshold)
+                {
+                    _cellPhoneCallsSum += expense.Charge;
+                }
+                else
+                {
+                    _cellPhoneCallsSum = _cellPhoneCallsThreshold;
+                }
             }
             else
             {
-                _sum = _threshold;
+                _landlineCallsSum += expense.Charge;
             }
         }
+
+        public decimal GetCurrentCost()
+        {
+            return _cellPhoneCallsSum + _landlineCallsSum;
+        }
+
 
         public class Expense
         {

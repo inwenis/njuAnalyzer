@@ -44,7 +44,7 @@ class AnalyzerTests
     [Test]
     public static void GetCurrentCost_CallsExceedCostThreshold_ReturnsCallsCostNoGreaterThanThreshold()
     {
-        var sut = new Analyzer(threshold: 29.00m);
+        var sut = new Analyzer(cellPhoneCallsThreshold: 29.00m);
 
         var expense = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall); 
         sut.Add(expense);
@@ -58,7 +58,7 @@ class AnalyzerTests
     [Test]
     public static void GetCurrentCost_AddingLanlineCall_AddsChargeToCost()
     {
-        var sut = new Analyzer(threshold: 29.00m);
+        var sut = new Analyzer(cellPhoneCallsThreshold: 29.00m);
 
         var callPhoneCall = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall);
         var landLineExpense = new Analyzer.Expense(5.0m, Analyzer.ExpenseTypes.LandlineCall);
@@ -70,6 +70,20 @@ class AnalyzerTests
         Assert.AreEqual(25.00m, currentCost);
     }
 
-    
+    [Test]
+    public static void GetCurrentCost_AddingLanlineCallWhenCellPhoneCallReachThreshold_AddsChargeToCost()
+    {
+        var sut = new Analyzer(cellPhoneCallsThreshold: 29.00m);
+
+        var callPhoneCall = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall);
+        var landLineExpense = new Analyzer.Expense(5.0m, Analyzer.ExpenseTypes.LandlineCall);
+        sut.Add(callPhoneCall);
+        sut.Add(callPhoneCall);
+        sut.Add(callPhoneCall);
+        sut.Add(landLineExpense);
+        var currentCost = sut.GetCurrentCost();
+
+        Assert.AreEqual(34.00m, currentCost);
+    }
 
 }
