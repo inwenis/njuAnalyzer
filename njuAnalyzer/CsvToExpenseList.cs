@@ -42,6 +42,10 @@ namespace njuAnalyzer
                         {
                             expenseType = ExpenseType.InternationlSms;
                         }
+                        else if(@operator == "SMS Specjalny")
+                        {
+                            expenseType = ExpenseType.SpecialSms;
+                        }
                         else
                         {
                             expenseType = ExpenseType.SMS;

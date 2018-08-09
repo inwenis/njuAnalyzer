@@ -94,4 +94,19 @@ class CsvToExpenseListTests
         Assert.AreEqual(0.50m, result.First().Charge);
     }
 
+    [Test]
+    public static void Parse_ParsingSpecialSms_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.06.29 20:24;4872355;1szt.; Wiadomość SMS;SMS Specjalny;2.46 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(ExpenseType.SpecialSms, result.First().ExpenseType);
+        Assert.AreEqual(2.46m, result.First().Charge);
+    }
+
 }
