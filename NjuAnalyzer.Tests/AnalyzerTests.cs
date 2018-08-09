@@ -21,10 +21,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(_dummyLargeThreshold);
 
-        var expense = new Analyzer.Expense()
-        {
-            Charge = 10.00m
-        };
+        var expense = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall);
         sut.Add(expense);
         var currentCost = sut.GetCurrentCost();
 
@@ -36,10 +33,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(_dummyLargeThreshold);
 
-        var expense = new Analyzer.Expense() 
-        {
-            Charge = 10.00m
-        };
+        var expense = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall); 
         sut.Add(expense);
         sut.Add(expense);
         var currentCost = sut.GetCurrentCost();
@@ -52,10 +46,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(threshold: 29.00m);
 
-        var expense = new Analyzer.Expense() 
-        {
-            Charge = 10.00m
-        };
+        var expense = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall); 
         sut.Add(expense);
         sut.Add(expense);
         sut.Add(expense);
@@ -64,6 +55,21 @@ class AnalyzerTests
         Assert.AreEqual(29.00m, currentCost);
     }
 
-    //next test: adding landline calls
+    [Test]
+    public static void GetCurrentCost_AddingLanlineCall_AddsChargeToCost()
+    {
+        var sut = new Analyzer(threshold: 29.00m);
+
+        var callPhoneCall = new Analyzer.Expense(10.00m, Analyzer.ExpenseTypes.CellPhoneCall);
+        var landLineExpense = new Analyzer.Expense(5.0m, Analyzer.ExpenseTypes.LandlineCall);
+        sut.Add(callPhoneCall);
+        sut.Add(callPhoneCall);
+        sut.Add(landLineExpense);
+        var currentCost = sut.GetCurrentCost();
+
+        Assert.AreEqual(25.00m, currentCost);
+    }
+
+    
 
 }

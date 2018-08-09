@@ -31,7 +31,31 @@ namespace njuAnalyzer
 
         public class Expense
         {
-            public decimal Charge;
+            private decimal _charge;
+            private ExpenseTypes _expenseType;
+
+            public Expense(decimal charge, ExpenseTypes expenseType)
+            {
+                _charge = charge;
+                _expenseType = expenseType;
+            }
+
+            public decimal Charge
+            {
+                get => _charge;
+            }
+
+            public ExpenseTypes ExpenseType
+            {
+                get => _expenseType;
+            }
         }
+
+        public enum ExpenseTypes
+        {
+            LandlineCall,
+            CellPhoneCall
+        }
+
     }
 }
