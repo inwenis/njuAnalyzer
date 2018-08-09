@@ -49,7 +49,7 @@ namespace njuAnalyzer
                     expenseType = njuAnalyzer.ExpenseType.CellPhoneCall;
                 }
             }
-            else
+            else if(@event == "Wiadomość SMS")
             {
                 if (@operator == "SMS międzynarodowy")
                 {
@@ -64,7 +64,10 @@ namespace njuAnalyzer
                     expenseType = njuAnalyzer.ExpenseType.SMS;
                 }
             }
-
+            else
+            {
+                expenseType = njuAnalyzer.ExpenseType.RoamingCall;
+            }
             return expenseType;
         }
     }

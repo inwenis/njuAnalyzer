@@ -124,4 +124,18 @@ class CsvToExpenseListTests
         Assert.AreEqual(1.71m, result.First().Charge);
     }
 
+    [Test]
+    public static void Parse_ParsingRoamingCall_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.06.06 11:09;+48 500 332 531;2:12min:sek; roaming;Inny;0.35 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(ExpenseType.RoamingCall, result.First().ExpenseType);
+        Assert.AreEqual(0.35m, result.First().Charge);
+    }
 }
