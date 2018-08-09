@@ -16,10 +16,10 @@ namespace njuAnalyzer
                 var expenses = lines.Skip(1).Select(x =>
                 {
                     var split = x.Split(';');
+                    var @event = split[3].Trim();
                     var cost = split[5].Replace(" zł", "").Replace('.', ',');
                     var parsedCost = decimal.Parse(cost);
                     ExpenseType expenseType;
-                    var @event = split[3].Trim();
                     if (@event == "Dane")
                     {
                         expenseType = ExpenseType.MobileData;
