@@ -63,4 +63,19 @@ class CsvToExpenseListTests
         Assert.AreEqual(Analyzer.ExpenseTypes.CellPhoneCall, result.First().ExpenseType);
         Assert.AreEqual(0.02m, result.First().Charge);
     }
+
+    [Test]
+    public static void Parse_ParsingSms_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.05.19 14:41;+48 601 658 991;1szt.; Wiadomość SMS;Orange;0.09 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(Analyzer.ExpenseTypes.SMS, result.First().ExpenseType);
+        Assert.AreEqual(0.09m, result.First().Charge);
+    }
 }

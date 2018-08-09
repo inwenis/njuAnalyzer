@@ -24,9 +24,13 @@ namespace njuAnalyzer
                     {
                         expenseTypes = Analyzer.ExpenseTypes.MobileData;
                     }
-                    else
+                    else if(@event == "Rozmowa głosowa")
                     {
                         expenseTypes = Analyzer.ExpenseTypes.CellPhoneCall;
+                    }
+                    else
+                    {
+                        expenseTypes = Analyzer.ExpenseTypes.SMS;
                     }
                     return new Analyzer.Expense(parsedCost, expenseTypes);
                 });
