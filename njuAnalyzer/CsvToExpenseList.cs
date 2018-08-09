@@ -17,6 +17,7 @@ namespace njuAnalyzer
                 {
                     var split = x.Split(';');
                     var @event = split[3].Trim();
+                    var @operator = split[4].Trim();
                     var cost = split[5].Replace(" zł", "").Replace('.', ',');
                     var parsedCost = decimal.Parse(cost);
                     ExpenseType expenseType;
@@ -26,7 +27,14 @@ namespace njuAnalyzer
                     }
                     else if(@event == "Rozmowa głosowa")
                     {
-                        expenseType = ExpenseType.CellPhoneCall;
+                        if (@operator == "Polska")
+                        {
+                            expenseType = ExpenseType.LandlineCall;
+                        }
+                        else
+                        {
+                            expenseType = ExpenseType.CellPhoneCall;
+                        }
                     }
                     else
                     {

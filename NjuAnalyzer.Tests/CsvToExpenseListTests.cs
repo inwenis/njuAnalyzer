@@ -64,5 +64,20 @@ class CsvToExpenseListTests
         Assert.AreEqual(0.02m, result.First().Charge);
     }
 
+    [Test]
+    public static void Parse_ParsingLandLineCall_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.06.09 12:36;+48 616 518 600;0:42min:sek; Rozmowa głosowa;Polska;0.13 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(ExpenseType.LandlineCall, result.First().ExpenseType);
+        Assert.AreEqual(0.13m, result.First().Charge);
+    }
+
 
 }
