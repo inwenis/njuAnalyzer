@@ -48,4 +48,19 @@ class CsvToExpenseListTests
         Assert.AreEqual(Analyzer.ExpenseTypes.MobileData, result.Last().ExpenseType);
         Assert.AreEqual(2.00m, result.Last().Charge);
     }
+
+    [Test]
+    public static void Parse_ParsingCellPhoneCall_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.05.19 13:14;+48 796 196 666;0:05min:sek; Rozmowa głosowa;Play;0.02 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(Analyzer.ExpenseTypes.CellPhoneCall, result.First().ExpenseType);
+        Assert.AreEqual(0.02m, result.First().Charge);
+    }
 }

@@ -18,7 +18,17 @@ namespace njuAnalyzer
                     var split = x.Split(';');
                     var cost = split[5].Replace(" zł", "").Replace('.', ',');
                     var parsedCost = decimal.Parse(cost);
-                    return new Analyzer.Expense(parsedCost, Analyzer.ExpenseTypes.MobileData);
+                    Analyzer.ExpenseTypes expenseTypes;
+                    var @event = split[3].Trim();
+                    if (@event == "Dane")
+                    {
+                        expenseTypes = Analyzer.ExpenseTypes.MobileData;
+                    }
+                    else
+                    {
+                        expenseTypes = Analyzer.ExpenseTypes.CellPhoneCall;
+                    }
+                    return new Analyzer.Expense(parsedCost, expenseTypes);
                 });
                 return expenses;
             }
