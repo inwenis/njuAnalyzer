@@ -8,6 +8,7 @@
         MobileData,
         InternationlSms,
         SpecialSms,
-        InfolineCall
+        InfolineCall,
+        RoamingCall
     }
 }
