@@ -92,7 +92,8 @@ namespace njuAnalyzer
             CellPhoneCall,
             SMS,
             MobileData,
-            InternationlSms
+            InternationlSms,
+            SpecialSms
         }
 
     }

@@ -147,4 +147,21 @@ class AnalyzerTests
 
         Assert.AreEqual(39.50m, currentCost);
     }
+
+    [Test]
+    public static void GetCurrentCost_AddingSpecialSmsAndThresholdsAreReached_SpecialSmsCostIsAddedToTotalCost()
+    {
+        var sut = new Analyzer(29.00m, 10.00m);
+
+        var cellPhoneExponse = new Analyzer.Expense(30.0m, Analyzer.ExpenseTypes.CellPhoneCall);
+        var landLineExpense = new Analyzer.Expense(30.0m, Analyzer.ExpenseTypes.LandlineCall);
+        var specialSms = new Analyzer.Expense(2.49m, Analyzer.ExpenseTypes.SpecialSms);
+        sut.Add(cellPhoneExponse);
+        sut.Add(landLineExpense);
+        sut.Add(specialSms);
+        var currentCost = sut.GetCurrentCost();
+
+        Assert.AreEqual(41.49m, currentCost);
+    }
+
 }
