@@ -6,11 +6,13 @@ namespace njuAnalyzer
     {
         private decimal _cellPhoneCallsSum;
         private decimal _cellPhoneCallsThreshold;
+        private decimal _landlineCallsThreshold;
         private decimal _landlineCallsSum;
 
-        public Analyzer(decimal cellPhoneCallsThreshold)
+        public Analyzer(decimal cellPhoneCallsThreshold, decimal landlineCallsThreshold)
         {
             _cellPhoneCallsThreshold = cellPhoneCallsThreshold;
+            _landlineCallsThreshold = landlineCallsThreshold;
         }
 
         public void Add(Expense expense)
@@ -28,7 +30,14 @@ namespace njuAnalyzer
             }
             else
             {
-                _landlineCallsSum += expense.Charge;
+                if (_landlineCallsSum + expense.Charge < _landlineCallsThreshold)
+                {
+                    _landlineCallsSum += expense.Charge;
+                }
+                else
+                {
+                    _landlineCallsSum = _landlineCallsThreshold;
+                }
             }
         }
 
