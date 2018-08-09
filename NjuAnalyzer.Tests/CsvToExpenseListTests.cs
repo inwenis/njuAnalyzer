@@ -79,5 +79,19 @@ class CsvToExpenseListTests
         Assert.AreEqual(0.13m, result.First().Charge);
     }
 
+    [Test]
+    public static void Parse_ParsingInternationalSms_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.06.16 13:45;4542259472;1szt.; Wiadomość SMS;SMS międzynarodowy;0.50 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(ExpenseType.InternationlSms, result.First().ExpenseType);
+        Assert.AreEqual(0.50m, result.First().Charge);
+    }
 
 }

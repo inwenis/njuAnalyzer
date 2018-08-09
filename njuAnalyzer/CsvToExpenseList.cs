@@ -38,7 +38,14 @@ namespace njuAnalyzer
                     }
                     else
                     {
-                        expenseType = ExpenseType.SMS;
+                        if(@operator == "SMS międzynarodowy")
+                        {
+                            expenseType = ExpenseType.InternationlSms;
+                        }
+                        else
+                        {
+                            expenseType = ExpenseType.SMS;
+                        }
                     }
                     return new Expense(parsedCost, expenseType);
                 });
