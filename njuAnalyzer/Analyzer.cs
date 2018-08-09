@@ -17,7 +17,7 @@ namespace njuAnalyzer
 
         public void Add(Expense expense)
         {
-            if (expense.ExpenseType == ExpenseTypes.CellPhoneCall || expense.ExpenseType == ExpenseTypes.SMS)
+            if (expense.ExpenseType == ExpenseTypes.CellPhoneCall || expense.ExpenseType == ExpenseTypes.SMS || expense.ExpenseType == ExpenseTypes.MobileData)
             {
                 if (IsCellPhoneCallsCostThreasholdReached(expense))
                 {
@@ -83,7 +83,8 @@ namespace njuAnalyzer
         {
             LandlineCall,
             CellPhoneCall,
-            SMS
+            SMS,
+            MobileData
         }
 
     }

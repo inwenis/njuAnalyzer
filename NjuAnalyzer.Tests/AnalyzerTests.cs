@@ -115,4 +115,20 @@ class AnalyzerTests
 
         Assert.AreEqual(29.00m, currentCost);
     }
+
+    [Test]
+    public static void GetCurrentCost_AddingMobileDataCostAndCellPhoneCallsCostIsReached_SumReturnsCellPhoneThreshold()
+    {
+        var sut = new Analyzer(29.00m, 10.00m);
+
+        var cellPhoneExponse = new Analyzer.Expense(10.0m, Analyzer.ExpenseTypes.CellPhoneCall);
+        var mobileData = new Analyzer.Expense(15.00m, Analyzer.ExpenseTypes.MobileData);
+        sut.Add(cellPhoneExponse);
+        sut.Add(cellPhoneExponse);
+        sut.Add(cellPhoneExponse);
+        sut.Add(mobileData);
+        var currentCost = sut.GetCurrentCost();
+
+        Assert.AreEqual(29.00m, currentCost);
+    }
 }
