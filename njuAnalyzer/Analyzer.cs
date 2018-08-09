@@ -56,13 +56,33 @@
             return _cellPhoneCallsTotalCost + expense.Charge >= _cellPhoneCallsCostThreshold;
         }
 
-        public decimal GetCurrentCost()
+        public decimal GetTotalCost()
         {
             return _cellPhoneCallsTotalCost + _landlineCallTotalCost + _otherExpensesTotalCost;
         }
 
+        public CostDetails GetCostDetails()
+        {
+            return new CostDetails
+            {
+                CellPhoneCallsTotalCost = _cellPhoneCallsTotalCost,
+                LandlineCallTotalCost = _landlineCallTotalCost,
+                OtherExpensesTotalCost = _otherExpensesTotalCost
+            };
+        }
 
+    }
 
+    public class CostDetails
+    {
+        public decimal CellPhoneCallsTotalCost { get; set; }
+        public decimal LandlineCallTotalCost { get; set; }
+        public decimal OtherExpensesTotalCost { get; set; }
 
+        public override string ToString()
+        {
+            return "cell:" + CellPhoneCallsTotalCost + " land:" + LandlineCallTotalCost + " other:" +
+                   OtherExpensesTotalCost;
+        }
     }
 }

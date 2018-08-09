@@ -16,9 +16,10 @@ namespace njuAnalyzer
                 analyzer.Add(expense);
             }
 
-            Console.WriteLine("Analyzer cost: " + analyzer.GetCurrentCost());
-            Console.WriteLine("+9 " + (analyzer.GetCurrentCost() + 9));
+            Console.WriteLine("Analyzer cost: " + analyzer.GetTotalCost());
+            Console.WriteLine("+9 " + (analyzer.GetTotalCost() + 9));
             Console.WriteLine("expected: 71,67");
+            Console.WriteLine(analyzer.GetCostDetails());
             Console.WriteLine("Press [enter] to exit");
             Console.ReadLine();
         }

@@ -11,7 +11,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(_dummyLargeThreshold, _dummyLargeThreshold);
 
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(0, currentCost);
     }
@@ -23,7 +23,7 @@ class AnalyzerTests
 
         var expense = new Expense(10.00m, ExpenseType.CellPhoneCall);
         sut.Add(expense);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(10.00m, currentCost);
     }
@@ -36,7 +36,7 @@ class AnalyzerTests
         var expense = new Expense(10.00m, ExpenseType.CellPhoneCall); 
         sut.Add(expense);
         sut.Add(expense);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(20.00m, currentCost);
     }
@@ -50,7 +50,7 @@ class AnalyzerTests
         sut.Add(expense);
         sut.Add(expense);
         sut.Add(expense);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(29.00m, currentCost);
     }
@@ -65,7 +65,7 @@ class AnalyzerTests
         sut.Add(callPhoneCall);
         sut.Add(callPhoneCall);
         sut.Add(landLineExpense);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(25.00m, currentCost);
     }
@@ -81,7 +81,7 @@ class AnalyzerTests
         sut.Add(callPhoneCall);
         sut.Add(callPhoneCall);
         sut.Add(landLineExpense);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(34.00m, currentCost);
     }
@@ -95,7 +95,7 @@ class AnalyzerTests
         sut.Add(landLineExpense);
         sut.Add(landLineExpense);
         sut.Add(landLineExpense);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(10.00m, currentCost);
     }
@@ -111,7 +111,7 @@ class AnalyzerTests
         sut.Add(cellPhoneExponse);
         sut.Add(cellPhoneExponse);
         sut.Add(sms);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(29.00m, currentCost);
     }
@@ -127,7 +127,7 @@ class AnalyzerTests
         sut.Add(cellPhoneExponse);
         sut.Add(cellPhoneExponse);
         sut.Add(mobileData);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(29.00m, currentCost);
     }
@@ -143,7 +143,7 @@ class AnalyzerTests
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(internationalSms);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(39.50m, currentCost);
     }
@@ -159,7 +159,7 @@ class AnalyzerTests
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(specialSms);
-        var currentCost = sut.GetCurrentCost();
+        var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(41.49m, currentCost);
     }
