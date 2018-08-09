@@ -20,41 +20,48 @@ namespace njuAnalyzer
                     var @operator = split[4].Trim();
                     var cost = split[5].Replace(" zł", "").Replace('.', ',');
                     var parsedCost = decimal.Parse(cost);
-                    ExpenseType expenseType;
-                    if (@event == "Dane")
-                    {
-                        expenseType = ExpenseType.MobileData;
-                    }
-                    else if(@event == "Rozmowa głosowa")
-                    {
-                        if (@operator == "Polska")
-                        {
-                            expenseType = ExpenseType.LandlineCall;
-                        }
-                        else
-                        {
-                            expenseType = ExpenseType.CellPhoneCall;
-                        }
-                    }
-                    else
-                    {
-                        if(@operator == "SMS międzynarodowy")
-                        {
-                            expenseType = ExpenseType.InternationlSms;
-                        }
-                        else if(@operator == "SMS Specjalny")
-                        {
-                            expenseType = ExpenseType.SpecialSms;
-                        }
-                        else
-                        {
-                            expenseType = ExpenseType.SMS;
-                        }
-                    }
+                    var expenseType = ExpenseType(@event, @operator);
                     return new Expense(parsedCost, expenseType);
                 });
                 return expenses;
             }
+        }
+
+        private static ExpenseType ExpenseType(string @event, string @operator)
+        {
+            ExpenseType expenseType;
+            if (@event == "Dane")
+            {
+                expenseType = njuAnalyzer.ExpenseType.MobileData;
+            }
+            else if (@event == "Rozmowa głosowa")
+            {
+                if (@operator == "Polska")
+                {
+                    expenseType = njuAnalyzer.ExpenseType.LandlineCall;
+                }
+                else
+                {
+                    expenseType = njuAnalyzer.ExpenseType.CellPhoneCall;
+                }
+            }
+            else
+            {
+                if (@operator == "SMS międzynarodowy")
+                {
+                    expenseType = njuAnalyzer.ExpenseType.InternationlSms;
+                }
+                else if (@operator == "SMS Specjalny")
+                {
+                    expenseType = njuAnalyzer.ExpenseType.SpecialSms;
+                }
+                else
+                {
+                    expenseType = njuAnalyzer.ExpenseType.SMS;
+                }
+            }
+
+            return expenseType;
         }
     }
 }
