@@ -40,6 +40,10 @@ namespace njuAnalyzer
                 {
                     expenseType = njuAnalyzer.ExpenseType.LandlineCall;
                 }
+                else if (@operator == "Infolinie")
+                {
+                    expenseType = njuAnalyzer.ExpenseType.InfolineCall;
+                }
                 else
                 {
                     expenseType = njuAnalyzer.ExpenseType.CellPhoneCall;

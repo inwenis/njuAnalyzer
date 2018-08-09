@@ -7,6 +7,7 @@
         SMS,
         MobileData,
         InternationlSms,
-        SpecialSms
+        SpecialSms,
+        InfolineCall
     }
 }
