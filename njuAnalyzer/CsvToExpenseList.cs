@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace njuAnalyzer
 {
@@ -6,7 +7,17 @@ namespace njuAnalyzer
     {
         public static IEnumerable<Analyzer.Expense> Parse(IEnumerable<string> lines)
         {
-            return new List<Analyzer.Expense>();
+            if (lines.Count() == 0)
+            {
+                return new List<Analyzer.Expense>();
+            }
+            else
+            {
+                return new List<Analyzer.Expense>
+                {
+                    new Analyzer.Expense(0m, Analyzer.ExpenseTypes.MobileData)
+                };
+            }
         }
     }
 }
