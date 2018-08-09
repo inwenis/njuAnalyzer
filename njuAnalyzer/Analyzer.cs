@@ -4,46 +4,56 @@ namespace njuAnalyzer
 {
     public class Analyzer
     {
-        private decimal _cellPhoneCallsSum;
-        private decimal _cellPhoneCallsThreshold;
-        private decimal _landlineCallsThreshold;
-        private decimal _landlineCallsSum;
+        private decimal _cellPhoneCallsTotalCost;
+        private decimal _cellPhoneCallsCostThreshold;
+        private decimal _landlineCallsCostThreshold;
+        private decimal _landlineCallTotalCost;
 
-        public Analyzer(decimal cellPhoneCallsThreshold, decimal landlineCallsThreshold)
+        public Analyzer(decimal cellPhoneCallsCostThreshold, decimal landlineCallsCostThreshold)
         {
-            _cellPhoneCallsThreshold = cellPhoneCallsThreshold;
-            _landlineCallsThreshold = landlineCallsThreshold;
+            _cellPhoneCallsCostThreshold = cellPhoneCallsCostThreshold;
+            _landlineCallsCostThreshold = landlineCallsCostThreshold;
         }
 
         public void Add(Expense expense)
         {
             if (expense.ExpenseType == ExpenseTypes.CellPhoneCall)
             {
-                if (_cellPhoneCallsSum + expense.Charge < _cellPhoneCallsThreshold)
+                if (IsCellPhoneCallsCostThreasholdReached(expense))
                 {
-                    _cellPhoneCallsSum += expense.Charge;
+                    _cellPhoneCallsTotalCost = _cellPhoneCallsCostThreshold;
                 }
                 else
                 {
-                    _cellPhoneCallsSum = _cellPhoneCallsThreshold;
+                    _cellPhoneCallsTotalCost += expense.Charge;
                 }
             }
             else
             {
-                if (_landlineCallsSum + expense.Charge < _landlineCallsThreshold)
+                if (IsLandLineCallsCostthresholdReached(expense))
                 {
-                    _landlineCallsSum += expense.Charge;
+                    _landlineCallTotalCost = _landlineCallsCostThreshold;
                 }
                 else
                 {
-                    _landlineCallsSum = _landlineCallsThreshold;
+                    _landlineCallTotalCost += expense.Charge;
                 }
             }
         }
 
+        private bool IsLandLineCallsCostthresholdReached(Expense expense)
+        {
+            return _landlineCallTotalCost + expense.Charge >= _landlineCallsCostThreshold;
+        }
+
+        private bool IsCellPhoneCallsCostThreasholdReached(Expense expense)
+        {
+            return _cellPhoneCallsTotalCost + expense.Charge >= _cellPhoneCallsCostThreshold;
+        }
+
         public decimal GetCurrentCost()
         {
-            return _cellPhoneCallsSum + _landlineCallsSum;
+            return _cellPhoneCallsTotalCost + _landlineCallTotalCost;
         }
 
 
