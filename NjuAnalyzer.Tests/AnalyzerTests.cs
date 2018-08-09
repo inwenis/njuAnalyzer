@@ -171,10 +171,10 @@ class AnalyzerTests
 
         var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
         var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var specialSms = new Expense(2.49m, ExpenseType.InfolineCall);
+        var infoLineCall = new Expense(2.49m, ExpenseType.InfolineCall);
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
-        sut.Add(specialSms);
+        sut.Add(infoLineCall);
         var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(41.49m, currentCost);
@@ -187,10 +187,26 @@ class AnalyzerTests
 
         var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
         var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var specialSms = new Expense(2.49m, ExpenseType.RoamingCall);
+        var roamingCall = new Expense(2.49m, ExpenseType.RoamingCall);
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
-        sut.Add(specialSms);
+        sut.Add(roamingCall);
+        var currentCost = sut.GetTotalCost();
+
+        Assert.AreEqual(41.49m, currentCost);
+    }
+
+    [Test]
+    public static void GetCurrentCost_AddingInternationlCallAndThresholdsAreReached_SpecialSmsCostIsAddedToTotalCost()
+    {
+        var sut = new Analyzer(29.00m, 10.00m);
+
+        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
+        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
+        var internationalCall = new Expense(2.49m, ExpenseType.InternationalCall);
+        sut.Add(cellPhoneExponse);
+        sut.Add(landLineExpense);
+        sut.Add(internationalCall);
         var currentCost = sut.GetTotalCost();
 
         Assert.AreEqual(41.49m, currentCost);

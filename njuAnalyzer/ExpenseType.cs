@@ -9,6 +9,7 @@
         InternationlSms,
         SpecialSms,
         InfolineCall,
-        RoamingCall
+        RoamingCall,
+        InternationalCall
     }
 }
