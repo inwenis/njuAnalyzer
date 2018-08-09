@@ -5,11 +5,11 @@ namespace njuAnalyzer
 {
     public class CsvToExpenseList
     {
-        public static IEnumerable<Analyzer.Expense> Parse(IEnumerable<string> lines)
+        public static IEnumerable<Expense> Parse(IEnumerable<string> lines)
         {
             if (lines.Count() == 0)
             {
-                return new List<Analyzer.Expense>();
+                return new List<Expense>();
             }
             else
             {
@@ -18,21 +18,21 @@ namespace njuAnalyzer
                     var split = x.Split(';');
                     var cost = split[5].Replace(" zł", "").Replace('.', ',');
                     var parsedCost = decimal.Parse(cost);
-                    Analyzer.ExpenseTypes expenseTypes;
+                    ExpenseType expenseType;
                     var @event = split[3].Trim();
                     if (@event == "Dane")
                     {
-                        expenseTypes = Analyzer.ExpenseTypes.MobileData;
+                        expenseType = ExpenseType.MobileData;
                     }
                     else if(@event == "Rozmowa głosowa")
                     {
-                        expenseTypes = Analyzer.ExpenseTypes.CellPhoneCall;
+                        expenseType = ExpenseType.CellPhoneCall;
                     }
                     else
                     {
-                        expenseTypes = Analyzer.ExpenseTypes.SMS;
+                        expenseType = ExpenseType.SMS;
                     }
-                    return new Analyzer.Expense(parsedCost, expenseTypes);
+                    return new Expense(parsedCost, expenseType);
                 });
                 return expenses;
             }

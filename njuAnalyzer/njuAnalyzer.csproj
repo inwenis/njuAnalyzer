@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Analyzer.cs" />
     <Compile Include="CsvToExpenseList.cs" />
+    <Compile Include="Expense.cs" />
+    <Compile Include="ExpenseType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

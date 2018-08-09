@@ -16,9 +16,9 @@
 
         public void Add(Expense expense)
         {
-            if (expense.ExpenseType == ExpenseTypes.CellPhoneCall || 
-                expense.ExpenseType == ExpenseTypes.SMS || 
-                expense.ExpenseType == ExpenseTypes.MobileData)
+            if (expense.ExpenseType == ExpenseType.CellPhoneCall || 
+                expense.ExpenseType == ExpenseType.SMS || 
+                expense.ExpenseType == ExpenseType.MobileData)
             {
                 if (IsCellPhoneCallsCostThreasholdReached(expense))
                 {
@@ -29,7 +29,7 @@
                     _cellPhoneCallsTotalCost += expense.Charge;
                 }
             }
-            else if(expense.ExpenseType == ExpenseTypes.LandlineCall)
+            else if(expense.ExpenseType == ExpenseType.LandlineCall)
             {
                 if (IsLandLineCallsCostthresholdReached(expense))
                 {
@@ -62,37 +62,7 @@
         }
 
 
-        public class Expense
-        {
-            private decimal _charge;
-            private ExpenseTypes _expenseType;
 
-            public Expense(decimal charge, ExpenseTypes expenseType)
-            {
-                _charge = charge;
-                _expenseType = expenseType;
-            }
-
-            public decimal Charge
-            {
-                get => _charge;
-            }
-
-            public ExpenseTypes ExpenseType
-            {
-                get => _expenseType;
-            }
-        }
-
-        public enum ExpenseTypes
-        {
-            LandlineCall,
-            CellPhoneCall,
-            SMS,
-            MobileData,
-            InternationlSms,
-            SpecialSms
-        }
 
     }
 }

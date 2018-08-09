@@ -27,7 +27,7 @@ class CsvToExpenseListTests
         var result = CsvToExpenseList.Parse(lines);
 
         Assert.AreEqual(1, result.Count());
-        Assert.AreEqual(Analyzer.ExpenseTypes.MobileData, result.First().ExpenseType);
+        Assert.AreEqual(ExpenseType.MobileData, result.First().ExpenseType);
         Assert.AreEqual(0.00m, result.First().Charge);
     }
 
@@ -43,9 +43,9 @@ class CsvToExpenseListTests
         var result = CsvToExpenseList.Parse(lines);
 
         Assert.AreEqual(2, result.Count());
-        Assert.AreEqual(Analyzer.ExpenseTypes.MobileData, result.First().ExpenseType);
+        Assert.AreEqual(ExpenseType.MobileData, result.First().ExpenseType);
         Assert.AreEqual(1.00m, result.First().Charge);
-        Assert.AreEqual(Analyzer.ExpenseTypes.MobileData, result.Last().ExpenseType);
+        Assert.AreEqual(ExpenseType.MobileData, result.Last().ExpenseType);
         Assert.AreEqual(2.00m, result.Last().Charge);
     }
 
@@ -60,22 +60,9 @@ class CsvToExpenseListTests
         var result = CsvToExpenseList.Parse(lines);
 
         Assert.AreEqual(1, result.Count());
-        Assert.AreEqual(Analyzer.ExpenseTypes.CellPhoneCall, result.First().ExpenseType);
+        Assert.AreEqual(ExpenseType.CellPhoneCall, result.First().ExpenseType);
         Assert.AreEqual(0.02m, result.First().Charge);
     }
 
-    [Test]
-    public static void Parse_ParsingSms_ReturnsCorrectlyParsedExpense()
-    {
-        var lines = new string[]
-        {
-            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
-            "2018.05.19 14:41;+48 601 658 991;1szt.; Wiadomość SMS;Orange;0.09 zł"
-        };
-        var result = CsvToExpenseList.Parse(lines);
 
-        Assert.AreEqual(1, result.Count());
-        Assert.AreEqual(Analyzer.ExpenseTypes.SMS, result.First().ExpenseType);
-        Assert.AreEqual(0.09m, result.First().Charge);
-    }
 }
