@@ -5,7 +5,7 @@ using NUnit.Framework;
 class IntegrationTests
 {
     [Test]
-    public void CsvToExpenseList_And_Analyzer()
+    public void CsvToExpenseList_and_Analyzer_work_together()
     {
         var lines = new string[]
         {
