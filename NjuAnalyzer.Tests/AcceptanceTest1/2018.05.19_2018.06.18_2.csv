@@ -1,0 +1,148 @@
+data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt
+2018.05.19 09:25;+48 500 332 531;1:44min:sek; roaming;Inny;0.00 zł
+2018.05.20 21:51;491770946230;12:26min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.20 21:51;;12:26min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 11:41;+48 501 200 777;1szt.; roaming;Telefonica O2;0.00 zł
+2018.05.21 13:51;+48 501 200 777;1szt.; roaming;Telefonica O2;0.00 zł
+2018.05.21 14:39;491760225877;8:59min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 14:39;;8:59min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 15:03;+48 501 200 777;1szt.; roaming;Telefonica O2;0.00 zł
+2018.05.21 15:39;;2:57min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 15:39;491760226543;2:57min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 16:01;491760199922;2:59min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 16:01;;2:59min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 16:10;;0:24min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 16:10;491760198189;0:24min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 16:13;Internet;1200kB; roaming;Standard;0.00 zł
+2018.05.21 16:15;+48 662 246 086;1:06min:sek; roaming;Inny;0.00 zł
+2018.05.21 16:23;+48 662 246 086;0:23min:sek; roaming;Inny;0.00 zł
+2018.05.21 16:23;+48 662 246 086;0:27min:sek; roaming;Inny;0.00 zł
+2018.05.21 18:13;+48 500 332 531;0:57min:sek; roaming;Inny;0.00 zł
+2018.05.21 19:31;491770947143;0:38min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 19:31;;0:38min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 20:04;;1:30min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 20:04;491760225971;1:30min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 22:31;491770947235;1:05min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 22:31;;1:05min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 22:32;;0:21min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 22:32;491770940292;0:21min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 22:38;;4:41min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.21 22:38;491770944444;4:41min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 22:43;491770947052;6:09min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.21 22:43;;6:09min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.22 12:47;+48 692 975 957;1:12min:sek; roaming;Inny;0.00 zł
+2018.05.22 15:04;;0:58min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.22 15:04;491770942593;0:58min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.22 15:17;;3:29min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.22 15:17;491760256854;3:29min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.22 16:36;+48 501 200 777;1szt.; roaming;Telefonica O2;0.00 zł
+2018.05.22 19:15;+48 501 200 777;1szt.; roaming;Telefonica O2;0.00 zł
+2018.05.22 20:21;491770947416;5:12min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.22 20:21;;5:12min:sek; roaming;Niemcy kom;0.00 zł
+2018.05.23 15:50;+48 500 332 531;0:27min:sek; roaming;Inny;0.00 zł
+2018.05.24 08:25;+48 500 332 531;0:38min:sek; roaming;Inny;0.00 zł
+2018.05.24 08:45;+48 692 975 957;0:29min:sek; roaming;Inny;0.00 zł
+2018.05.24 11:00;+48 692 975 957;3:20min:sek; roaming;Inny;0.00 zł
+2018.05.24 11:09;+48 695 899 572;1:41min:sek; roaming;Inny;0.00 zł
+2018.05.24 22:30;+48 662 246 086;3:59min:sek; roaming;Inny;0.00 zł
+2018.05.25 18:33;+48 692 975 957;0:37min:sek; roaming;Inny;0.10 zł
+2018.05.26 11:36;+48 662 246 108;0:46min:sek; roaming;Inny;0.12 zł
+2018.05.26 12:56;+48 500 332 531;0:20min:sek; roaming;Inny;0.08 zł
+2018.05.26 16:14;+48 500 332 531;1:08min:sek; roaming;Inny;0.18 zł
+2018.05.26 18:56;+48 500 332 531;0:31min:sek; roaming;Inny;0.08 zł
+2018.05.26 18:57;+48 500 332 531;0:55min:sek; roaming;Inny;0.15 zł
+2018.05.26 20:10;+48 500 332 531;0:14min:sek; roaming;Inny;0.08 zł
+2018.05.27 15:37;491760224176;4:21min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.27 15:37;;4:21min:sek; roaming;Niemcy kom;0.17 zł
+2018.05.28 13:11;491760247504;7:29min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.05.28 13:11;;7:29min:sek; roaming;Niemcy kom;0.30 zł
+2018.05.28 19:29;+48 692 975 957;0:17min:sek; roaming;Inny;0.08 zł
+2018.05.30 14:38;+48 662 246 086;0:13min:sek; roaming;Inny;0.08 zł
+2018.05.31 09:27;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.01 20:33;+48 662 246 086;0:50min:sek; roaming;Inny;0.13 zł
+2018.06.01 20:41;491760139865;3:17min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.01 20:41;;3:17min:sek; roaming;Niemcy kom;0.13 zł
+2018.06.01 20:44;;3:37min:sek; roaming;Niemcy kom;0.14 zł
+2018.06.01 20:44;491760134032;3:37min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.02 15:42;;2:22min:sek; roaming;Niemcy kom;0.09 zł
+2018.06.02 15:42;491760241004;2:22min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.02 15:45;491770942954;2:20min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.02 15:45;;2:20min:sek; roaming;Niemcy kom;0.09 zł
+2018.06.02 21:12;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.03 18:55;;15:40min:sek; roaming;Niemcy kom;0.63 zł
+2018.06.03 18:55;491770945804;15:40min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.04 14:21;+48 692 975 957;0:44min:sek; roaming;Inny;0.12 zł
+2018.06.04 16:12;+48 692 975 957;0:18min:sek; roaming;Inny;0.08 zł
+2018.06.04 16:12;+48 692 975 957;2:03min:sek; roaming;Inny;0.33 zł
+2018.06.04 20:41;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.04 20:45;+48 662 246 086;0:07min:sek; roaming;Inny;0.08 zł
+2018.06.04 21:51;491760189619;0:14min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.04 21:51;;0:14min:sek; roaming;Niemcy kom;0.01 zł
+2018.06.04 21:52;;3:29min:sek; roaming;Niemcy kom;0.14 zł
+2018.06.04 21:52;491760191956;3:29min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.04 21:56;;0:25min:sek; roaming;Niemcy kom;0.02 zł
+2018.06.04 21:56;491760193579;0:25min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.04 22:25;491770940240;5:23min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.04 22:25;;5:23min:sek; roaming;Niemcy kom;0.22 zł
+2018.06.05 10:35;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.05 14:21;+48 692 975 957;0:40min:sek; roaming;Inny;0.11 zł
+2018.06.05 16:29;+48 692 975 957;0:20min:sek; roaming;Inny;0.08 zł
+2018.06.05 16:32;+48 692 975 957;0:21min:sek; roaming;Inny;0.08 zł
+2018.06.06 11:09;+48 500 332 531;2:12min:sek; roaming;Inny;0.35 zł
+2018.06.06 12:04;+48 500 332 531;2:19min:sek; roaming;Inny;0.37 zł
+2018.06.06 12:30;+48 500 332 531;2:36min:sek; roaming;Inny;0.42 zł
+2018.06.06 17:39;+48 692 975 957;1:09min:sek; roaming;Inny;0.18 zł
+2018.06.07 10:43;+48 500 332 531;0:20min:sek; roaming;Inny;0.08 zł
+2018.06.07 13:51;+48 692 975 957;3:04min:sek; roaming;Inny;0.49 zł
+2018.06.07 14:03;+48 692 975 957;0:49min:sek; roaming;Inny;0.13 zł
+2018.06.07 14:19;491760195568;0:32min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.07 14:19;;0:32min:sek; roaming;Niemcy kom;0.02 zł
+2018.06.07 14:20;491760224977;1:09min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.07 14:20;;1:09min:sek; roaming;Niemcy kom;0.05 zł
+2018.06.07 14:51;491760197096;2:38min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.07 14:51;;2:38min:sek; roaming;Niemcy kom;0.11 zł
+2018.06.07 16:26;+48 500 332 531;1:11min:sek; roaming;Inny;0.19 zł
+2018.06.07 18:57;491760223742;0:01min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.07 18:57;;0:01min:sek; roaming;Niemcy kom;0.00 zł
+2018.06.07 18:59;+48 692 975 957;0:46min:sek; roaming;Inny;0.12 zł
+2018.06.08 18:49;4915754618862;0:10min:sek; roaming;Inny;0.08 zł
+2018.06.08 20:01;491760142936;0:21min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.08 20:01;;0:21min:sek; roaming;Niemcy kom;0.01 zł
+2018.06.09 15:12;+48 662 246 108;5:09min:sek; roaming;Inny;0.82 zł
+2018.06.10 09:21;;4:31min:sek; roaming;Niemcy kom;0.18 zł
+2018.06.10 09:21;491770944738;4:31min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.10 15:21;;18:46min:sek; roaming;Niemcy kom;0.75 zł
+2018.06.10 15:21;491770947364;18:46min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.10 20:25;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.10 20:52;;7:42min:sek; roaming;Niemcy kom;0.31 zł
+2018.06.10 20:52;491770942050;7:42min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.11 08:29;+48 662 246 108;0:07min:sek; roaming;Inny;0.08 zł
+2018.06.11 08:31;+48 662 246 108;2:25min:sek; roaming;Inny;0.39 zł
+2018.06.11 12:58;491760179078;2:01min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.11 12:58;;2:01min:sek; roaming;Niemcy kom;0.08 zł
+2018.06.11 13:01;+48 501 536 452;6:49min:sek; roaming;Inny;1.09 zł
+2018.06.11 21:44;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.11 22:00;491770944897;2:51min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.11 22:00;;2:51min:sek; roaming;Niemcy kom;0.11 zł
+2018.06.12 09:39;+48 509 295 736;1:43min:sek; roaming;Inny;0.27 zł
+2018.06.13 11:22;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.13 11:33;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.13 21:56;;19:37min:sek; roaming;Niemcy kom;0.78 zł
+2018.06.13 21:56;491770940924;19:37min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.17 18:24;+48 501 200 777;1szt.; roaming;Inny;0.05 zł
+2018.06.17 18:54;491770942314;6:39min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.17 18:54;;6:39min:sek; roaming;Niemcy kom;0.27 zł
+2018.06.17 21:23;;0:20min:sek; roaming;Niemcy kom;0.01 zł
+2018.06.17 21:23;491770944758;0:20min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.18 10:12;+48 509 295 736;2:38min:sek; roaming;Inny;0.42 zł
+2018.06.18 11:44;;7:12min:sek; roaming;Niemcy kom;0.29 zł
+2018.06.18 11:44;491760226753;7:12min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.18 16:40;491760258026;2:17min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.18 16:40;;2:17min:sek; roaming;Niemcy kom;0.09 zł
+2018.06.18 21:20;+48 501 200 777;1szt.; roaming;Telefonica O2;0.05 zł
+2018.06.18 21:28;;0:47min:sek; roaming;Niemcy kom;0.03 zł
+2018.06.18 21:28;491770947061;0:47min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł
+2018.06.18 21:29;+48 501 200 777;1szt.; roaming;Telefonica O2;0.05 zł
+2018.06.18 22:04;+48 660 534 685;0:08min:sek; roaming;Inny;0.08 zł
+2018.06.18 22:04;;11:40min:sek; roaming;Niemcy kom;0.47 zł
+2018.06.18 22:04;491770940120;11:40min:sek; Rozmowa głosowa;Niemcy kom;0.00 zł

@@ -1,0 +1,324 @@
+data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt
+2018.05.19 08:25;Internet;8046100.00kB; Dane;Standard;28.65 zł
+2018.05.19 13:14;+48 796 196 666;0:05min:sek; Rozmowa głosowa;Play;0.02 zł
+2018.05.19 14:41;+48 601 658 991;1szt.; Wiadomość SMS;Orange;0.09 zł
+2018.05.19 15:10;+48 601 658 991;1:17min:sek; Rozmowa głosowa;Orange;0.24 zł
+2018.05.20 10:51;Internet;1039000.00kB; Dane;Standard;0.00 zł
+2018.05.20 12:43;+48 601 658 991;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.05.20 14:22;+48 662 011 462;1:09min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.20 15:04;+48 513 521 760;0:31min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.05.20 19:05;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.20 19:44;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.20 19:45;+48 790 645 560;1szt.; Wiadomość MMS;Play;0.00 zł
+2018.05.20 21:51;+48 696 411 650;12:26min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.05.20 22:04;+48 660 534 685;23:00min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.05.21 10:09;Internet;435400.00kB; Dane;Standard;0.00 zł
+2018.05.21 14:39;+48 696 411 650;8:59min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.05.21 16:06;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.05.21 16:20;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.21 17:11;+48 796 196 666;0:46min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.21 22:07;+48 690 640 774;18:30min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.05.22 08:38;Internet;10100.00kB; Dane;Standard;0.00 zł
+2018.05.22 13:24;Internet;319300.00kB; Dane;Standard;0.00 zł
+2018.05.22 14:11;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.05.22 14:11;+48 696 411 650;1szt.; Wiadomość MMS;nju mobile;0.00 zł
+2018.05.22 14:13;+48 667 231 309;4:26min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.22 14:19;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.22 14:44;+48 696 411 650;1szt.; Wiadomość MMS;nju mobile;0.00 zł
+2018.05.22 14:44;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.05.22 21:55;+48 660 534 685;0:10min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.05.22 21:57;+48 660 793 542;11:37min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.05.22 22:09;+48 660 534 685;13:24min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.05.22 23:20;+48 501 224 785;6:57min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.05.23 09:36;+48 501 224 785;1:49min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.05.23 09:38;Internet;916400.00kB; Dane;Standard;0.00 zł
+2018.05.23 09:40;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.05.23 09:40;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.05.23 09:45;+48 696 411 650;1szt.; Wiadomość MMS;nju mobile;0.00 zł
+2018.05.23 09:45;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.05.24 07:45;Internet;28000.00kB; Dane;Standard;0.00 zł
+2018.05.24 09:13;Internet;3000.00kB; Dane;Standard;0.00 zł
+2018.05.24 13:45;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.24 17:00;Internet;89600.00kB; Dane;Standard;0.00 zł
+2018.05.24 21:03;Internet;220900.00kB; Dane;Standard;0.00 zł
+2018.05.25 08:14;Internet;1100.00kB; Dane;Standard;0.00 zł
+2018.05.25 08:31;Internet;5100.00kB; Dane;Standard;0.00 zł
+2018.05.25 11:03;+48 513 416 630;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.25 11:04;+48 513 416 630;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.25 11:07;+48 513 416 630;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.25 16:48;Internet;1700.00kB; Dane;Standard;0.00 zł
+2018.05.25 17:24;Internet;27200.00kB; Dane;Standard;0.00 zł
+2018.05.25 18:17;Internet;1700.00kB; Dane;Standard;0.00 zł
+2018.05.25 18:23;Internet;10300.00kB; Dane;Standard;0.00 zł
+2018.05.25 19:15;Internet;100.00kB; Dane;Standard;0.00 zł
+2018.05.25 19:20;Internet;22300.00kB; Dane;Standard;0.00 zł
+2018.05.25 19:28;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.25 20:47;+48 662 246 086;0:30min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.26 09:50;Internet;9600.00kB; Dane;Standard;0.00 zł
+2018.05.26 14:32;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 14:57;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:03;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:26;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:26;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:32;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:34;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:34;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:38;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 15:40;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.05.26 17:52;+48 501 224 785;3:51min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.05.26 20:34;Internet;3100.00kB; Dane;Standard;0.00 zł
+2018.05.26 22:23;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.05.27 12:41;+48 784 016 775;1:00min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.27 14:56;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.27 15:20;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.05.27 15:37;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.05.27 15:37;+48 696 411 650;4:21min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.05.27 18:19;Internet;77900.00kB; Dane;Standard;0.00 zł
+2018.05.27 18:32;+48 662 246 086;3:14min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.27 20:29;+48 784 016 775;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.27 21:46;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.05.27 22:07;Internet;1400.00kB; Dane;Standard;0.00 zł
+2018.05.27 22:42;Internet;23700.00kB; Dane;Standard;0.00 zł
+2018.05.28 08:07;Internet;31200.00kB; Dane;Standard;0.00 zł
+2018.05.28 13:03;Internet;196800.00kB; Dane;Standard;0.00 zł
+2018.05.28 13:11;+48 696 411 650;7:29min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.05.28 17:24;+48 790 645 560;0:07min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.05.28 17:43;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.28 21:17;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.28 21:17;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.28 21:17;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.28 21:47;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.28 21:47;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.28 21:56;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.29 09:24;Internet;922200.00kB; Dane;Standard;0.00 zł
+2018.05.29 17:42;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.29 17:43;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.29 17:43;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.30 09:29;Internet;18600.00kB; Dane;Standard;0.00 zł
+2018.05.30 12:07;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.30 12:07;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.30 17:11;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.30 17:15;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.30 17:16;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.05.31 12:51;Internet;715400.00kB; Dane;Standard;0.00 zł
+2018.05.31 14:17;+48 660 534 685;5:43min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.05.31 14:46;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.06.01 07:10;Internet;5800.00kB; Dane;Standard;0.00 zł
+2018.06.01 07:46;Internet;800.00kB; Dane;Standard;0.00 zł
+2018.06.01 07:48;Internet;2400.00kB; Dane;Standard;0.00 zł
+2018.06.01 18:14;Internet;152300.00kB; Dane;Standard;0.00 zł
+2018.06.01 20:36;Internet;44500.00kB; Dane;Standard;0.00 zł
+2018.06.01 20:41;+48 696 411 650;3:17min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.01 20:44;+48 696 411 650;3:37min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.01 20:48;+48 660 534 685;5:18min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.01 21:00;+48 663 803 587;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.01 21:00;+48 663 803 587;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.01 21:02;+48 663 803 587;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.01 22:57;Internet;100.00kB; Dane;Standard;0.00 zł
+2018.06.02 00:18;Internet;66200.00kB; Dane;Standard;0.00 zł
+2018.06.02 09:35;Internet;1400.00kB; Dane;Standard;0.00 zł
+2018.06.02 10:53;Internet;214400.00kB; Dane;Standard;0.00 zł
+2018.06.02 13:02;Internet;229400.00kB; Dane;Standard;0.00 zł
+2018.06.02 14:28;+48 662 246 086;4:49min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.02 14:38;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.02 14:38;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.02 15:44;Internet;111300.00kB; Dane;Standard;0.00 zł
+2018.06.02 15:46;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.02 17:02;Internet;140000.00kB; Dane;Standard;0.00 zł
+2018.06.02 18:40;Internet;43500.00kB; Dane;Standard;0.00 zł
+2018.06.02 18:41;+48 662 246 086;1:42min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.02 19:19;Internet;500.00kB; Dane;Standard;0.00 zł
+2018.06.02 19:31;Internet;1100.00kB; Dane;Standard;0.00 zł
+2018.06.02 19:59;Internet;1200.00kB; Dane;Standard;0.00 zł
+2018.06.02 20:07;+48 601 658 991;0:59min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.02 20:10;Internet;1200.00kB; Dane;Standard;0.00 zł
+2018.06.02 20:11;+48 601 658 991;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.02 22:54;Internet;160800.00kB; Dane;Standard;0.00 zł
+2018.06.02 23:37;Internet;205600.00kB; Dane;Standard;0.00 zł
+2018.06.03 01:15;Internet;19800.00kB; Dane;Standard;0.00 zł
+2018.06.03 09:02;Internet;27000.00kB; Dane;Standard;0.00 zł
+2018.06.03 10:08;Internet;97300.00kB; Dane;Standard;0.00 zł
+2018.06.03 10:32;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.03 10:39;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.03 11:34;+48 662 246 086;0:50min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.03 12:27;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.03 12:33;Internet;49700.00kB; Dane;Standard;0.00 zł
+2018.06.03 14:34;Internet;37800.00kB; Dane;Standard;0.00 zł
+2018.06.03 15:08;Internet;100.00kB; Dane;Standard;0.00 zł
+2018.06.03 15:09;Internet;300.00kB; Dane;Standard;0.00 zł
+2018.06.03 15:09;+48 662 246 086;0:15min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.03 15:11;Internet;400.00kB; Dane;Standard;0.00 zł
+2018.06.03 15:12;+48 662 246 086;1:06min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.03 15:19;Internet;2600.00kB; Dane;Standard;0.00 zł
+2018.06.03 15:36;Internet;2089900.00kB; Dane;Standard;0.00 zł
+2018.06.03 18:54;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.03 18:55;+48 696 411 650;15:40min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.03 19:11;+48 662 246 086;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.03 19:12;+48 690 640 774;0:39min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.03 19:13;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.03 19:49;+48 690 640 774;0:40min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.04 10:41;Internet;32700.00kB; Dane;Standard;0.00 zł
+2018.06.04 21:57;+48 791 065 599;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.04 22:03;+48 791 065 599;3:21min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.04 22:19;+48 662 246 086;6:26min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.04 22:25;+48 696 411 650;5:23min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.04 22:52;+48 791 065 599;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.04 23:39;Internet;112200.00kB; Dane;Standard;0.00 zł
+2018.06.05 07:17;Internet;60800.00kB; Dane;Standard;0.00 zł
+2018.06.05 08:21;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.05 09:48;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.05 19:16;Internet;647200.00kB; Dane;Standard;0.00 zł
+2018.06.06 08:15;Internet;13000.00kB; Dane;Standard;0.00 zł
+2018.06.06 08:31;Internet;3000.00kB; Dane;Standard;0.00 zł
+2018.06.06 11:06;+48 801 999 111;8:50min:sek; Rozmowa głosowa;Infolinie;1.71 zł
+2018.06.06 16:18;Internet;219100.00kB; Dane;Standard;0.00 zł
+2018.06.06 17:18;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.06 17:20;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.06 17:20;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.06 18:25;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.06 18:32;+48 660 534 685;3:16min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.06 18:42;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.06 19:20;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.07 01:09;Internet;2900.00kB; Dane;Standard;0.00 zł
+2018.06.07 07:47;Internet;24200.00kB; Dane;Standard;0.00 zł
+2018.06.07 16:04;Internet;393800.00kB; Dane;Standard;0.00 zł
+2018.06.07 17:08;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.06.07 17:08;+48 696 411 650;1szt.; Wiadomość MMS;nju mobile;0.00 zł
+2018.06.07 21:23;+48 660 793 542;37:12min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.07 22:02;+48 501 224 785;1:53min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.08 07:44;Internet;881900.00kB; Dane;Standard;0.00 zł
+2018.06.08 12:27;+48 501 224 785;7:12min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.08 13:03;+48 790 645 560;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.08 15:05;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.08 15:06;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.08 16:00;+48 501 825 053;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.08 17:12;+48 501 224 785;1szt.; Wiadomość MMS;Orange;0.00 zł
+2018.06.08 17:14;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.08 18:52;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.08 18:53;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.08 19:38;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.08 20:58;+48 690 640 774;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.08 21:27;Internet;1700.00kB; Dane;Standard;0.00 zł
+2018.06.08 22:07;+48 690 640 774;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.08 22:08;+48 501 224 785;2:00min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.09 00:33;+48 601 099 999;1szt.; Wiadomość SMS;Plus;0.00 zł
+2018.06.09 09:41;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.09 10:33;+48 501 085 242;2:56min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.09 10:36;+48 501 224 785;2:56min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.09 10:40;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.09 10:42;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.09 10:47;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.09 11:41;4819999;0:30min:sek; Rozmowa głosowa;Polska;0.09 zł
+2018.06.09 11:41;4819999;10:28min:sek; Rozmowa głosowa;Polska;1.99 zł
+2018.06.09 11:52;+48 660 534 685;2:11min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.09 12:36;+48 616 518 600;0:42min:sek; Rozmowa głosowa;Polska;0.13 zł
+2018.06.09 15:36;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.09 15:53;+48 660 793 542;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.09 15:54;+48 501 224 785;0:49min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.09 16:00;+48 660 793 542;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.09 16:09;Internet;22700.00kB; Dane;Standard;0.00 zł
+2018.06.09 20:02;+48 660 793 542;1szt.; Wiadomość MMS;Orange;0.00 zł
+2018.06.09 20:29;+48 501 085 242;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.09 20:30;+48 501 085 242;1:03min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.09 20:31;+48 668 247 972;0:34min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.09 20:43;+48 662 246 086;0:44min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.09 21:11;+48 662 246 086;0:04min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.09 21:15;+48 662 246 086;0:04min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.10 10:56;+48 501 224 785;0:39min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.10 13:08;+48 668 247 972;0:16min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.10 13:09;+48 793 401 316;0:59min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.10 13:11;+48 501 085 242;1:01min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.10 13:15;+48 793 401 316;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.10 13:17;+48 793 401 316;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.10 13:17;+48 793 401 316;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.10 13:18;Internet;46700.00kB; Dane;Standard;0.00 zł
+2018.06.10 14:10;+48 663 803 587;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.10 15:27;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.10 17:37;+48 509 204 162;0:08min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.10 17:37;+48 501 224 785;0:49min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.10 19:02;+48 660 793 542;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.10 19:03;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.06.10 19:09;+48 660 793 542;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.10 19:27;Internet;99600.00kB; Dane;Standard;0.00 zł
+2018.06.10 19:31;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.10 19:32;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.10 20:00;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.10 20:52;+48 696 411 650;7:42min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.11 07:17;Internet;2439400.00kB; Dane;Standard;0.00 zł
+2018.06.11 08:16;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.11 11:17;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.11 11:17;+48 668 247 972;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.11 12:25;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.11 14:10;+48 501 224 785;0:13min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.11 17:04;+48 509 204 162;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.11 17:16;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.11 19:20;+48 509 204 162;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.11 19:57;+48 570 415 599;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.11 21:36;+48 570 415 599;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.11 22:00;+48 696 411 650;2:51min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.11 22:55;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.11 22:55;+48 501 224 785;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.12 09:32;+48 660 793 542;1szt.; Wiadomość MMS;Orange;0.00 zł
+2018.06.12 09:35;+48 660 793 542;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.12 20:07;+48 660 534 685;1:49min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.12 23:07;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.12 23:11;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.13 00:12;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.06.13 00:12;+48 501 224 785;1szt.; Wiadomość MMS;Orange;0.00 zł
+2018.06.13 00:26;+48 660 534 685;0:46min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.13 08:26;Internet;138100.00kB; Dane;Standard;0.00 zł
+2018.06.13 11:25;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.13 19:36;Internet;360100.00kB; Dane;Standard;0.00 zł
+2018.06.13 21:35;+48 660 534 685;19:58min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.13 21:56;+48 696 411 650;19:37min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.13 22:16;+48 662 246 086;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.14 09:46;Internet;447200.00kB; Dane;Standard;0.00 zł
+2018.06.15 08:15;Internet;2500.00kB; Dane;Standard;0.00 zł
+2018.06.15 11:29;Internet;2114100.00kB; Dane;Standard;0.00 zł
+2018.06.15 13:56;+48 662 246 086;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.15 13:57;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.15 14:13;+48 662 246 086;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.15 14:14;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.00 zł
+2018.06.15 14:14;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.15 14:14;+48 660 534 685;1szt.; Wiadomość SMS;T-mobile;0.00 zł
+2018.06.15 15:58;+48 662 246 086;2:51min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.15 16:52;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.15 18:47;4542259472;3:22min:sek; Rozmowa głosowa;Dania kom;0.76 zł
+2018.06.15 18:47;4542259472;3:22min:sek; Rozmowa głosowa;Dania kom;7.63 zł
+2018.06.15 20:08;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.15 20:08;+48 519 789 123;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.15 20:08;+48 662 246 086;8:51min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.15 21:24;4542259472;2:15min:sek; Rozmowa głosowa;Dania kom;5.72 zł
+2018.06.15 21:24;4542259472;2:15min:sek; Rozmowa głosowa;Dania kom;0.57 zł
+2018.06.16 13:45;4542259472;1szt.; Wiadomość SMS;SMS międzynarodowy;0.50 zł
+2018.06.16 15:41;+48 660 534 685;21:23min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.16 16:05;+48 662 246 086;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.16 16:27;+48 662 246 086;10:35min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.16 22:58;4542259472;1szt.; Wiadomość SMS;SMS międzynarodowy;0.50 zł
+2018.06.17 10:17;+48 790 645 560;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.17 11:24;Internet;1007500.00kB; Dane;Standard;0.00 zł
+2018.06.17 18:54;+48 696 411 650;6:39min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.17 19:02;+48 660 793 542;0:19min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.17 19:07;+48 660 534 685;4:55min:sek; Rozmowa głosowa;T-mobile;0.00 zł
+2018.06.17 20:16;4542259472;1szt.; Wiadomość SMS;SMS międzynarodowy;0.50 zł
+2018.06.17 22:14;+48 662 246 086;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.17 22:17;+48 662 246 086;0:05min:sek; Rozmowa głosowa;Play;0.00 zł
+2018.06.18 09:23;Internet;9000.00kB; Dane;Standard;0.00 zł
+2018.06.18 12:36;+48 690 640 774;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.18 12:38;+48 690 640 774;1szt.; Wiadomość MMS;Orange;0.00 zł
+2018.06.18 12:39;+48 690 640 774;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.18 12:43;+48 690 640 774;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.18 12:43;+48 690 640 774;1szt.; Wiadomość SMS;Orange;0.00 zł
+2018.06.18 13:05;+48 504 193 188;0:12min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.18 13:28;+48 690 640 774;0:10min:sek; Rozmowa głosowa;Orange;0.00 zł
+2018.06.18 16:02;+48 732 190 545;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.18 16:03;+48 732 190 545;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.18 16:17;+48 732 190 545;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.18 16:18;+48 732 190 545;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.18 16:19;+48 732 190 545;1szt.; Wiadomość SMS;Play;0.00 zł
+2018.06.18 16:40;+48 696 411 650;2:17min:sek; Rozmowa głosowa;nju mobile;0.00 zł
+2018.06.18 16:44;Internet;13500.00kB; Dane;Standard;0.00 zł
+2018.06.18 19:17;Internet;457600.00kB; Dane;Standard;0.00 zł
+2018.06.18 21:13;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.18 21:13;+48 696 411 650;1szt.; Wiadomość SMS;nju mobile;0.00 zł
+2018.06.18 21:28;+48 696 411 650;0:47min:sek; Rozmowa głosowa;nju mobile;0.00 zł
