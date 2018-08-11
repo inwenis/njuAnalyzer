@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CsvToExpenseListTests.cs" />
     <Compile Include="AnalyzerTests.cs" />
+    <Compile Include="IntegrationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
