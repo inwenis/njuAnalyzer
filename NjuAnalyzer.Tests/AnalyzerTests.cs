@@ -211,4 +211,12 @@ class AnalyzerTests
 
         Assert.AreEqual(41.49m, currentCost);
     }
+
+    [Test]
+    public static void GetCostDetails_ForNoExpenses_ReturnsPredefinedExtraCostForSecondNumber()
+    {
+        var sut = new Analyzer(29, 10, 9);
+        var costDetails = sut.GetCostDetails();
+        Assert.AreEqual(9, costDetails.ExtraSecondNumberCost);
+    }
 }

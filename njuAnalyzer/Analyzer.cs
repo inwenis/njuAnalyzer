@@ -7,11 +7,13 @@
         private decimal _landlineCallsCostThreshold;
         private decimal _landlineCallTotalCost;
         private decimal _otherExpensesTotalCost;
+        private decimal _extraSecondNumberCost;
 
-        public Analyzer(decimal cellPhoneCallsCostThreshold, decimal landlineCallsCostThreshold)
+        public Analyzer(decimal cellPhoneCallsCostThreshold, decimal landlineCallsCostThreshold, decimal extraSecondNumberCost = 9)
         {
             _cellPhoneCallsCostThreshold = cellPhoneCallsCostThreshold;
             _landlineCallsCostThreshold = landlineCallsCostThreshold;
+            _extraSecondNumberCost = extraSecondNumberCost;
         }
 
         public void Add(Expense expense)
@@ -67,7 +69,8 @@
             {
                 CellPhoneCallsTotalCost = _cellPhoneCallsTotalCost,
                 LandlineCallTotalCost = _landlineCallTotalCost,
-                OtherExpensesTotalCost = _otherExpensesTotalCost
+                OtherExpensesTotalCost = _otherExpensesTotalCost,
+                ExtraSecondNumberCost = _extraSecondNumberCost
             };
         }
 
@@ -78,6 +81,7 @@
         public decimal CellPhoneCallsTotalCost { get; set; }
         public decimal LandlineCallTotalCost { get; set; }
         public decimal OtherExpensesTotalCost { get; set; }
+        public decimal ExtraSecondNumberCost { get; set; }
 
         public override string ToString()
         {
