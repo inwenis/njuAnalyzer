@@ -56,7 +56,7 @@
             return _cellPhoneCallsTotalCost + expense.Charge >= _cellPhoneCallsCostThreshold;
         }
 
-        public decimal GetTotalCost()
+        public decimal GetTotalCallsCost()
         {
             return _cellPhoneCallsTotalCost + _landlineCallTotalCost + _otherExpensesTotalCost;
         }

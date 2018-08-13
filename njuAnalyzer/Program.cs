@@ -18,8 +18,8 @@ namespace njuAnalyzer
                 analyzer.Add(expense);
             }
 
-            Console.WriteLine("Analyzer cost: " + analyzer.GetTotalCost());
-            Console.WriteLine("+9 " + (analyzer.GetTotalCost() + 9));
+            Console.WriteLine("Analyzer cost: " + analyzer.GetTotalCallsCost());
+            Console.WriteLine("+9 " + (analyzer.GetTotalCallsCost() + 9));
             Console.WriteLine("expected: 71,67");
             Console.WriteLine(analyzer.GetCostDetails());
             Console.WriteLine();
@@ -32,8 +32,8 @@ namespace njuAnalyzer
                 analyzer.Add(expense);
             }
 
-            Console.WriteLine("Analyzer cost: " + analyzer.GetTotalCost());
-            Console.WriteLine("+9 " + (analyzer.GetTotalCost() + 9));
+            Console.WriteLine("Analyzer cost: " + analyzer.GetTotalCallsCost());
+            Console.WriteLine("+9 " + (analyzer.GetTotalCallsCost() + 9));
             Console.WriteLine("expected: 71,67");
             Console.WriteLine(analyzer.GetCostDetails());
             Console.WriteLine();

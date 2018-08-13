@@ -18,6 +18,6 @@ class IntegrationTests
         {
             analyzer.Add(expense);
         }
-        Assert.AreEqual(0.57m, analyzer.GetTotalCost());
+        Assert.AreEqual(0.57m, analyzer.GetTotalCallsCost());
     }
 }

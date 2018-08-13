@@ -24,6 +24,6 @@ class AcceptanceTest1
             analyzer.Add(expense);
         }
         // 9zł is the extra change for my second number
-        Assert.AreEqual(71.67m, analyzer.GetTotalCost() + 9);
+        Assert.AreEqual(71.67m, analyzer.GetTotalCallsCost() + 9);
     }
 }
