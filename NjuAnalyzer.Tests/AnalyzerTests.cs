@@ -1,4 +1,5 @@
-﻿using njuAnalyzer;
+﻿using System;
+using njuAnalyzer;
 using NUnit.Framework;
 
 [TestFixture]
@@ -21,7 +22,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(_dummyLargeThreshold, _dummyLargeThreshold);
 
-        var expense = new Expense(10.00m, ExpenseType.CellPhoneCall);
+        var expense = new Expense(10.00m, ExpenseType.CellPhoneCall, new DateTime());
         sut.Add(expense);
         var currentCost = sut.GetTotalCallsCost();
 
@@ -33,7 +34,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(_dummyLargeThreshold, _dummyLargeThreshold);
 
-        var expense = new Expense(10.00m, ExpenseType.CellPhoneCall); 
+        var expense = new Expense(10.00m, ExpenseType.CellPhoneCall, new DateTime()); 
         sut.Add(expense);
         sut.Add(expense);
         var currentCost = sut.GetTotalCallsCost();
@@ -46,7 +47,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, _dummyLargeThreshold);
 
-        var expense = new Expense(10.00m, ExpenseType.CellPhoneCall); 
+        var expense = new Expense(10.00m, ExpenseType.CellPhoneCall, new DateTime()); 
         sut.Add(expense);
         sut.Add(expense);
         sut.Add(expense);
@@ -60,8 +61,8 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, _dummyLargeThreshold);
 
-        var callPhoneCall = new Expense(10.00m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(5.0m, ExpenseType.LandlineCall);
+        var callPhoneCall = new Expense(10.00m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(5.0m, ExpenseType.LandlineCall, new DateTime());
         sut.Add(callPhoneCall);
         sut.Add(callPhoneCall);
         sut.Add(landLineExpense);
@@ -75,8 +76,8 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, _dummyLargeThreshold);
 
-        var callPhoneCall = new Expense(10.00m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(5.0m, ExpenseType.LandlineCall);
+        var callPhoneCall = new Expense(10.00m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(5.0m, ExpenseType.LandlineCall, new DateTime());
         sut.Add(callPhoneCall);
         sut.Add(callPhoneCall);
         sut.Add(callPhoneCall);
@@ -91,7 +92,7 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var landLineExpense = new Expense(5.0m, ExpenseType.LandlineCall);
+        var landLineExpense = new Expense(5.0m, ExpenseType.LandlineCall, new DateTime());
         sut.Add(landLineExpense);
         sut.Add(landLineExpense);
         sut.Add(landLineExpense);
@@ -105,8 +106,8 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(10.0m, ExpenseType.CellPhoneCall);
-        var sms = new Expense(0.09m, ExpenseType.SMS);
+        var cellPhoneExponse = new Expense(10.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var sms = new Expense(0.09m, ExpenseType.SMS, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(cellPhoneExponse);
         sut.Add(cellPhoneExponse);
@@ -121,8 +122,8 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(10.0m, ExpenseType.CellPhoneCall);
-        var mobileData = new Expense(15.00m, ExpenseType.MobileData);
+        var cellPhoneExponse = new Expense(10.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var mobileData = new Expense(15.00m, ExpenseType.MobileData, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(cellPhoneExponse);
         sut.Add(cellPhoneExponse);
@@ -137,9 +138,9 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var internationalSms = new Expense(0.50m, ExpenseType.InternationlSms);
+        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall, new DateTime());
+        var internationalSms = new Expense(0.50m, ExpenseType.InternationlSms, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(internationalSms);
@@ -153,9 +154,9 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var specialSms = new Expense(2.49m, ExpenseType.SpecialSms);
+        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall, new DateTime());
+        var specialSms = new Expense(2.49m, ExpenseType.SpecialSms, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(specialSms);
@@ -169,9 +170,9 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var infoLineCall = new Expense(2.49m, ExpenseType.InfolineCall);
+        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall, new DateTime());
+        var infoLineCall = new Expense(2.49m, ExpenseType.InfolineCall, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(infoLineCall);
@@ -185,9 +186,9 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var roamingCall = new Expense(2.49m, ExpenseType.RoamingCall);
+        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall, new DateTime());
+        var roamingCall = new Expense(2.49m, ExpenseType.RoamingCall, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(roamingCall);
@@ -201,9 +202,9 @@ class AnalyzerTests
     {
         var sut = new Analyzer(29.00m, 10.00m);
 
-        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall);
-        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall);
-        var internationalCall = new Expense(2.49m, ExpenseType.InternationalCall);
+        var cellPhoneExponse = new Expense(30.0m, ExpenseType.CellPhoneCall, new DateTime());
+        var landLineExpense = new Expense(30.0m, ExpenseType.LandlineCall, new DateTime());
+        var internationalCall = new Expense(2.49m, ExpenseType.InternationalCall, new DateTime());
         sut.Add(cellPhoneExponse);
         sut.Add(landLineExpense);
         sut.Add(internationalCall);

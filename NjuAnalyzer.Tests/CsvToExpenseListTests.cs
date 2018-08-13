@@ -29,6 +29,7 @@ class CsvToExpenseListTests
         Assert.AreEqual(1, result.Count());
         Assert.AreEqual(ExpenseType.MobileData, result.First().ExpenseType);
         Assert.AreEqual(0.00m, result.First().Charge);
+        Assert.AreEqual("2018.07.01 00:52", result.First().DateTime.ToString("yyyy.MM.dd HH:mm"));
     }
 
     [Test]
