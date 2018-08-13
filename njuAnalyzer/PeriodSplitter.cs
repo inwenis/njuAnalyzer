@@ -11,7 +11,7 @@ namespace njuAnalyzer
             {
                 return new List<Period>();
             }
-            else
+            else if (expenses.Count() == 1)
             {
                 return new List<Period>
                 {
@@ -20,6 +20,11 @@ namespace njuAnalyzer
                         Expenses = expenses
                     }
                 };
+            }
+            else
+            {
+                var periods = expenses.Select(x => new Period(){Expenses = new List<Expense>(){x}});
+                return periods.ToArray();
             }
         }
     }
