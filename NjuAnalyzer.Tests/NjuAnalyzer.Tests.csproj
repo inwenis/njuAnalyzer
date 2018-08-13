@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcceptanceTest1\IntegrationTests.cs" />
+    <Compile Include="PeriodSplitterTests.cs" />
     <Compile Include="CsvToExpenseListTests.cs" />
     <Compile Include="AnalyzerTests.cs" />
     <Compile Include="IntegrationTests.cs" />
