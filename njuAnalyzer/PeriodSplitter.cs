@@ -29,7 +29,7 @@ namespace njuAnalyzer
                     }
                 };
             }
-            else if (last.DateTime - first.DateTime < TimeSpan.FromDays(30))
+            else if (last.DateTime - first.DateTime < TimeSpan.FromDays(30) && expensesCopy.Length == 2)
             {
                 return new List<Period>
                 {
@@ -39,10 +39,35 @@ namespace njuAnalyzer
                     }
                 };
             }
-            else
+            else if(expensesCopy.Length == 2)
             {
                 var periods = expensesCopy.Select(x => new Period(){Expenses = new List<Expense>(){x}});
                 return periods.ToArray();
+            }
+            else
+            {
+                List<Period> periods = new List<Period>();
+                var currentPeriodExpenses = new List<Expense>();
+                Expense previousExpense = null;
+                foreach (var expense in orderedExpenses)
+                {
+                    if (currentPeriodExpenses.Any() && expense.DateTime.Day >= periodStartDay && previousExpense.DateTime.Day < periodStartDay)
+                    {
+                        periods.Add(new Period()
+                        {
+                            Expenses = currentPeriodExpenses
+                        });
+                        currentPeriodExpenses = new List<Expense>();
+                    }
+                    currentPeriodExpenses.Add(expense);
+                    previousExpense = expense;
+                }
+                periods.Add(new Period()
+                {
+                    Expenses = currentPeriodExpenses
+                });
+
+                return periods;
             }
         }
     }

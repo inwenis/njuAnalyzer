@@ -53,4 +53,26 @@ class PeriodSplitterTests
         Assert.AreSame(expenses.First(), periods.First().Expenses.First());
         Assert.AreSame(expenses.Last(), periods.Last().Expenses.First());
     }
+
+    [Test]
+    public static void Split_MultipleExpensesFromTwoPeriods_Returns2PeriodsWithCorrectlyAssignedExpenses()
+    {
+        var period1expense1 = new Expense(1, ExpenseType.CellPhoneCall, new DateTime(2018, 10, 10));
+        var period1expense2 = new Expense(1, ExpenseType.CellPhoneCall, new DateTime(2018, 10, 11));
+        var period2expense1 = new Expense(1, ExpenseType.CellPhoneCall, new DateTime(2018, 10, 19));
+        var expenses = new List<Expense>
+        {
+            period1expense1,
+            period1expense2,
+            period2expense1,
+        };
+        var periods = PeriodSplitter.Split(expenses, 18);
+        Assert.AreEqual(2, periods.Count());
+        Assert.AreEqual(2, periods.First().Expenses.Count());
+        Assert.AreEqual(1, periods.Last().Expenses.Count());
+        Assert.AreSame(period1expense1, periods.First().Expenses.First());
+        Assert.AreSame(period1expense2, periods.First().Expenses.Last());
+        Assert.AreSame(period2expense1, periods.Last().Expenses.First());
+    }
+
 }
