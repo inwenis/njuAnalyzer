@@ -6,7 +6,7 @@ namespace njuAnalyzer
 {
     public class PeriodSplitter
     {
-        public static IEnumerable<Period> Split(IEnumerable<Expense> expenses, int periodStartDay)
+        public static IEnumerable<Period> GroupIntoPeriods(IEnumerable<Expense> expenses, int periodStartDay)
         {
             return expenses
                 .GroupBy(x => ToPeriodName(x.DateTime, periodStartDay))
