@@ -85,8 +85,12 @@
 
         public override string ToString()
         {
-            return "cell:" + CellPhoneCallsTotalCost + " land:" + LandlineCallTotalCost + " other:" +
-                   OtherExpensesTotalCost;
+            return $"cell:{CellPhoneCallsTotalCost:00.00} land:{LandlineCallTotalCost:00.00} other:{OtherExpensesTotalCost:00.00} extra: {ExtraSecondNumberCost:00.00} total: {Sum():00.00}";
+        }
+
+        public decimal Sum()
+        {
+            return CellPhoneCallsTotalCost + LandlineCallTotalCost + OtherExpensesTotalCost + ExtraSecondNumberCost;
         }
     }
 }
