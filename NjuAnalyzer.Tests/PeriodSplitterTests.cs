@@ -28,6 +28,19 @@ class PeriodSplitterTests
     }
 
     [Test]
+    public static void Split_TwoExprensesFromOnePeriod_ReturnsInOnePeriodWith2Expenses()
+    {
+        var expenses = new List<Expense>
+        {
+            new Expense(1, ExpenseType.CellPhoneCall, new DateTime(2018, 10, 10)),
+            new Expense(1, ExpenseType.CellPhoneCall, new DateTime(2018, 10, 11))
+        };
+        var periods = PeriodSplitter.Split(expenses, 18);
+        Assert.AreEqual(1, periods.Count());
+        Assert.AreSame(expenses.First(), periods.First().Expenses.First());
+    }
+
+    [Test]
     public static void Split_ExprensesAreFromTwoPeriods_Returns2Periods()
     {
         var expenses = new List<Expense>

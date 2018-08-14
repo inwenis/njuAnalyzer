@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace njuAnalyzer
@@ -7,23 +8,37 @@ namespace njuAnalyzer
     {
         public static IEnumerable<Period> Split(IEnumerable<Expense> expenses, int periodStartDay)
         {
-            if (expenses.Count() == 0)
+            var expensesCopy = expenses.ToArray();
+            if (expensesCopy.Count() == 0)
             {
                 return new List<Period>();
             }
-            else if (expenses.Count() == 1)
+            else if (expensesCopy.Count() == 1)
             {
                 return new List<Period>
                 {
                     new Period
                     {
-                        Expenses = expenses
+                        Expenses = expensesCopy
                     }
                 };
             }
             else
             {
-                var periods = expenses.Select(x => new Period(){Expenses = new List<Expense>(){x}});
+                var orderedExpenses = expenses.OrderBy(x => x.DateTime);
+                var first = orderedExpenses.First();
+                var last = orderedExpenses.Last();
+                if (last.DateTime - first.DateTime < TimeSpan.FromDays(30))
+                {
+                    return new List<Period>
+                    {
+                        new Period
+                        {
+                            Expenses = expenses
+                        }
+                    };
+                }
+                var periods = expensesCopy.Select(x => new Period(){Expenses = new List<Expense>(){x}});
                 return periods.ToArray();
             }
         }
