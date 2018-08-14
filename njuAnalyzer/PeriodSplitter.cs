@@ -16,59 +16,31 @@ namespace njuAnalyzer
             }
 
             var orderedExpenses = expensesCopy.OrderBy(x => x.DateTime);
-            var first = orderedExpenses.First();
-            var last = orderedExpenses.Last();
-            
-            if (expensesCopy.Count() == 1)
+            List<Period> periods = new List<Period>();
+            var currentPeriodExpenses = new List<Expense>();
+            Expense previousExpense = null;
+            foreach (var expense in orderedExpenses)
             {
-                return new List<Period>
+                if (currentPeriodExpenses.Any() && expense.DateTime.Day >= periodStartDay &&
+                    previousExpense.DateTime.Day < periodStartDay)
                 {
-                    new Period
+                    periods.Add(new Period()
                     {
-                        Expenses = expensesCopy
-                    }
-                };
-            }
-            else if (last.DateTime - first.DateTime < TimeSpan.FromDays(30) && expensesCopy.Length == 2)
-            {
-                return new List<Period>
-                {
-                    new Period
-                    {
-                        Expenses = expenses
-                    }
-                };
-            }
-            else if(expensesCopy.Length == 2)
-            {
-                var periods = expensesCopy.Select(x => new Period(){Expenses = new List<Expense>(){x}});
-                return periods.ToArray();
-            }
-            else
-            {
-                List<Period> periods = new List<Period>();
-                var currentPeriodExpenses = new List<Expense>();
-                Expense previousExpense = null;
-                foreach (var expense in orderedExpenses)
-                {
-                    if (currentPeriodExpenses.Any() && expense.DateTime.Day >= periodStartDay && previousExpense.DateTime.Day < periodStartDay)
-                    {
-                        periods.Add(new Period()
-                        {
-                            Expenses = currentPeriodExpenses
-                        });
-                        currentPeriodExpenses = new List<Expense>();
-                    }
-                    currentPeriodExpenses.Add(expense);
-                    previousExpense = expense;
+                        Expenses = currentPeriodExpenses
+                    });
+                    currentPeriodExpenses = new List<Expense>();
                 }
-                periods.Add(new Period()
-                {
-                    Expenses = currentPeriodExpenses
-                });
 
-                return periods;
+                currentPeriodExpenses.Add(expense);
+                previousExpense = expense;
             }
+
+            periods.Add(new Period()
+            {
+                Expenses = currentPeriodExpenses
+            });
+
+            return periods;
         }
     }
 }
