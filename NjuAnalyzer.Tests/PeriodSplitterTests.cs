@@ -16,7 +16,7 @@ class PeriodSplitterTests
     }
 
     [Test]
-    public static void Split_AllExprensesAreFromOnePeriod_ReturnsAllExpensesInOnePeriod()
+    public static void Split_OneExpense_ReturnsInOnePeriod()
     {
         var expenses = new List<Expense>
         {
