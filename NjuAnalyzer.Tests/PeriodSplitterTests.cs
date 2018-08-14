@@ -41,7 +41,7 @@ class PeriodSplitterTests
     }
 
     [Test]
-    public static void Split_ExprensesAreFromTwoPeriods_Returns2Periods()
+    public static void Split_TwoExprensesAreFromTwoPeriods_Returns2PeriodsWith1ExpensePerPeriod()
     {
         var expenses = new List<Expense>
         {
