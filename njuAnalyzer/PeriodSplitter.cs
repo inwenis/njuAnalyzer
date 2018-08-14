@@ -8,39 +8,24 @@ namespace njuAnalyzer
     {
         public static IEnumerable<Period> Split(IEnumerable<Expense> expenses, int periodStartDay)
         {
-            var expensesCopy = expenses.ToArray();
-
-            if (expensesCopy.Count() == 0)
-            {
-                return new List<Period>();
-            }
-
-            var orderedExpenses = expensesCopy.OrderBy(x => x.DateTime);
-            List<Period> periods = new List<Period>();
-            var currentPeriodExpenses = new List<Expense>();
-            Expense previousExpense = null;
-            foreach (var expense in orderedExpenses)
-            {
-                if (currentPeriodExpenses.Any() && expense.DateTime.Day >= periodStartDay &&
-                    previousExpense.DateTime.Day < periodStartDay)
+            return expenses
+                .GroupBy(x => ToPeriodName(x.DateTime, periodStartDay))
+                .Select(x => new Period()
                 {
-                    periods.Add(new Period()
-                    {
-                        Expenses = currentPeriodExpenses
-                    });
-                    currentPeriodExpenses = new List<Expense>();
-                }
+                    Expenses = x
+                });
+        }
 
-                currentPeriodExpenses.Add(expense);
-                previousExpense = expense;
-            }
-
-            periods.Add(new Period()
+        private static string ToPeriodName(DateTime dateTime, int periodStartDay)
+        {
+            if (dateTime.Day == periodStartDay)
             {
-                Expenses = currentPeriodExpenses
-            });
-
-            return periods;
+                return dateTime.ToString("yyyy.MM");
+            }
+            else
+            {
+                return ToPeriodName(dateTime.AddDays(-1), periodStartDay);
+            }
         }
     }
 }
