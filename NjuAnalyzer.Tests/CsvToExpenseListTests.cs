@@ -154,4 +154,20 @@ class CsvToExpenseListTests
         Assert.AreEqual(ExpenseType.InternationalCall, result.First().ExpenseType);
         Assert.AreEqual(0.57m, result.First().Charge);
     }
+
+    [Test]
+    public static void Parse_ParsingNjuInfolineCall_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.06.15 21:24;4542259472;2:15min:sek; Rozmowa głosowa;Infolinia;0.57 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(ExpenseType.InfolineCall, result.First().ExpenseType);
+        Assert.AreEqual(0.57m, result.First().Charge);
+    }
+
 }
