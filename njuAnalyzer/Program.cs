@@ -25,15 +25,10 @@ namespace njuAnalyzer
                 Console.WriteLine(period.Expenses.First().DateTime);
                 Console.WriteLine(period.Expenses.Last().DateTime);
                 Console.WriteLine(analyzer.GetCostDetails());
-                ShowTotalCostForType(period.Expenses, ExpenseType.InternationlSms);
-                ShowTotalCostForType(period.Expenses, ExpenseType.CellPhoneCall);
-                ShowTotalCostForType(period.Expenses, ExpenseType.InfolineCall);
-                ShowTotalCostForType(period.Expenses, ExpenseType.InternationalCall);
-                ShowTotalCostForType(period.Expenses, ExpenseType.LandlineCall);
-                ShowTotalCostForType(period.Expenses, ExpenseType.MobileData);
-                ShowTotalCostForType(period.Expenses, ExpenseType.RoamingCall);
-                ShowTotalCostForType(period.Expenses, ExpenseType.SMS);
-                ShowTotalCostForType(period.Expenses, ExpenseType.SpecialSms);
+                foreach (var value in (ExpenseType[]) Enum.GetValues(typeof(ExpenseType)))
+                {
+                    ShowTotalCostForType(period.Expenses, value);
+                }
                 Console.WriteLine();
             }
 
