@@ -220,4 +220,17 @@ class AnalyzerTests
         var costDetails = sut.GetCostDetails();
         Assert.AreEqual(9, costDetails.ExtraSecondNumberCost);
     }
+
+    [Test]
+    public static void GetTotalCallsCost_AddingMmsExpense_AddsMmsExpenseToMobileExpenses()
+    {
+        var sut = new Analyzer(29.00m, 10.00m);
+
+        var cellPhoneExponse = new Expense(0.19m, ExpenseType.MMS, new DateTime());
+        sut.Add(cellPhoneExponse);
+        var costDetails = sut.GetCostDetails();
+
+        Assert.AreEqual(0.19m, costDetails.CellPhoneCallsTotalCost);
+    }
+
 }

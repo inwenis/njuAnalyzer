@@ -20,7 +20,8 @@
         {
             if (expense.ExpenseType == ExpenseType.CellPhoneCall || 
                 expense.ExpenseType == ExpenseType.SMS || 
-                expense.ExpenseType == ExpenseType.MobileData)
+                expense.ExpenseType == ExpenseType.MobileData ||
+                expense.ExpenseType == ExpenseType.MMS)
             {
                 if (IsCellPhoneCallsCostThreasholdReached(expense))
                 {
