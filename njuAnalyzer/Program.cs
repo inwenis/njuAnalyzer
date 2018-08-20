@@ -9,8 +9,8 @@ namespace njuAnalyzer
     {
         static void Main(string[] args)
         {
-            var myExpenses = File.ReadAllLines(@"C:\Users\fku-ext\Downloads\Połączenia nju mobile.csv");
-            var dadsExpenses = File.ReadAllLines(@"C:\Users\fku-ext\Downloads\Połączenia nju mobile (1).csv");
+            var myExpenses = File.ReadAllLines(@"C:\Users\fku-ext\Downloads\Połączenia nju mobile_ja.csv");
+            var dadsExpenses = File.ReadAllLines(@"C:\Users\fku-ext\Downloads\Połączenia nju mobile_tata.csv");
             var my = CsvToExpenseList.Parse(myExpenses);
             var dads = CsvToExpenseList.Parse(dadsExpenses);
             var all = my.Union(dads);

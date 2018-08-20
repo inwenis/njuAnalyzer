@@ -170,4 +170,18 @@ class CsvToExpenseListTests
         Assert.AreEqual(0.57m, result.First().Charge);
     }
 
+    [Test]
+    public static void Parse_ParsingMMS_ReturnsCorrectlyParsedExpense()
+    {
+        var lines = new string[]
+        {
+            "data i godzina;nr telefonu;liczba;zdarzenie;operator;koszt",
+            "2018.08.19 21:39;+48 660 534 685;1szt.; Wiadomość MMS;T-mobile;0.19 zł"
+        };
+        var result = CsvToExpenseList.Parse(lines);
+
+        Assert.AreEqual(1, result.Count());
+        Assert.AreEqual(ExpenseType.MMS, result.First().ExpenseType);
+    }
+
 }

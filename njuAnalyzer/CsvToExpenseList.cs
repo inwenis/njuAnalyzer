@@ -71,6 +71,10 @@ namespace njuAnalyzer
                     expenseType = njuAnalyzer.ExpenseType.SMS;
                 }
             }
+            else if (@event == "Wiadomość MMS")
+            {
+                expenseType = njuAnalyzer.ExpenseType.MMS;
+            }
             else
             {
                 expenseType = njuAnalyzer.ExpenseType.RoamingCall;
